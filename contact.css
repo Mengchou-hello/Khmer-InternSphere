@@ -594,3 +594,14 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(17, 17, 84, 0.3);
 }
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+    /* switch to single column */
+    margin: 28px auto;
+  }
+
+  .page-hero h1 {
+    font-size: 26px;
+  }
+}
