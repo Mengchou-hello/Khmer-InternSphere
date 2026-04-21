@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khmer InternSphere</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/nav.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Khmer InternSphere Logo">
+        </div>
+        <button class="burger" id="burgerBtn" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="mainNav">
+            <a href="home.html">Home</a>
+            <a href="internships.html">Internships</a>
+            <a href="companies.html">Companies</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <!-- put ur code here  -->
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <div class="page-hero">
+        <h1>Contact Us</h1>
+        <p>
+            Have a question or want to list your internship? Reach out - we'd love
+            to hear from you.
+        </p>
+    </div>
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+        <section class="form-card" aria-label="Contact form">
+            <h2>Send Us a Message</h2>
+
+            <form id="contact-form" action="#" method="POST" novalidate>
+                <fieldset>
+                    <legend>Student Inquiry</legend>
+
+                    <div class="form-group">
+                        <label for="student-name">Full Name <span class="req" aria-hidden="true">*</span></label>
+                        <input type="text" id="student-name" name="student_name" placeholder="e.g. Som Eoern" required
+                            aria-required="true" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-email">Email Address
+                            <span class="req" aria-hidden="true">*</span></label>
+                        <input type="email" id="student-email" name="student_email"
+                            placeholder="e.g. someoern168@gmail.com" required aria-required="true" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-phone">Phone Number</label>
+                        <input type="tel" id="student-phone" name="student_phone" placeholder="e.g. +855 96 345 678" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-message">Message <span class="req" aria-hidden="true">*</span></label>
+                        <textarea id="student-message" name="student_message"
+                            placeholder="Write your question or inquiry here..." required
+                            aria-required="true"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Company Inquiry Fields -->
+                <fieldset>
+                    <legend>Company Inquiry</legend>
+
+                    <div class="form-group">
+                        <label for="company-name">Company Name</label>
+                        <input type="text" id="company-name" name="company_name"
+                            placeholder="e.g. ABC Solutions Co., Ltd." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company-email">Company Email</label>
+                        <input type="email" id="company-email" name="company_email"
+                            placeholder="e.g. hr@abcsolutions.com" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company-phone">Company Phone</label>
+                        <input type="tel" id="company-phone" name="company_phone" placeholder="e.g. +855 96 456 789" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company-message">Internship Details / Message</label>
+                        <textarea id="company-message" name="company_message"
+                            placeholder="Describe the internship position you would like to list..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+        <aside class="info-sidebar" aria-label="Contact information">
+            <div class="info-card">
+                <h3>Official Contact Info</h3>
+
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>registrarofficer@khmerintersphere.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07
+                19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3
+                a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11
+                L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45
+                c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+855 23 123 456</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Address</strong>
+                        <p>Kilometer 6, Street 201R, Phnom Penh, Cambodia</p>
+                    </div>
+                </div>
+
+                <div class="map-embed">
+                    <iframe src="https://maps.google.com/maps?q=JW82%2BC95+Phnom+Penh+Cambodia&output=embed&z=16"
+                        allowfullscreen loading="lazy" title="Khmer InternSphere location"></iframe>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>Office Hours</h3>
+                <table class="hours-table" aria-label="Office hours">
+                    <tbody>
+                        <tr>
+                            <td>Monday – Friday</td>
+                            <td>8:00 AM – 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9:00 AM – 12:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-card">
+                <h3>About This Page</h3>
+                <p>
+                    Built by <strong>Alpha Team</strong> for Khmer InternSphere (INFO
+                    250 – Web Dev I). Uses semantic HTML5 fieldsets, accessible labels,
+                    and a responsive two-column layout.
+                </p>
+            </div>
+        </aside>
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer-logo">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <p class="footer-contact">
+            Group Alpha | INFO 250 Web Development I
+            Email: info@khmerintersphere.com | Phone: +855 168 168
+        </p>
+        <p class="footer-copy">&copy; 2026 Khmer InternSphere. All rights reserved.</p>
+    </footer>
+
+    <!-- ===================== THANK YOU OVERLAY ===================== -->
+    <div id="thankyou-overlay" class="thankyou-overlay" tabindex="-1" role="dialog" aria-modal="true" aria-label="Thank you message">
+        <div class="thankyou-card">
+            <div class="thankyou-icon">✉️</div>
+            <h2>Thank You!</h2>
+            <p>Your message has been sent successfully.<br>We'll get back to you within <strong>1–2 business days</strong>.</p>
+            <p class="thankyou-sub">— Khmer InternSphere Team</p>
+            <button id="back-btn" class="thankyou-back-btn">Back to Contact</button>
+        </div>
+    </div>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>

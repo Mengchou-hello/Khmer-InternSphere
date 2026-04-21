@@ -1,0 +1,437 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+ }
+
+ /* =========================
+   VARIABLES
+   ========================= */
+ :root {
+     --blue-darkest: #080838;
+     --blue-dark: #111154;
+     --blue-mid: #191970;
+     --blue-light: #292c7b;
+     --blue-accent: #393f86;
+     --blue-pale: #cadcfc;
+     --blue-xpale: #eef2ff;
+     --white: #ffffff;
+     --gray-light: #f4f6fb;
+     --gray-border: #c5cde8;
+     --gray-text: #4a5068;
+     --red-req: #c0392b;
+ }
+
+ .logo-track {
+     display: flex;
+     gap: 20px;
+     will-change: transform;
+ }
+
+ /* =========================
+   BASE
+   ========================= */
+ body {
+     font-size: 15px;
+     line-height: 1.6;
+     background-color: var(--gray-light);
+     color: var(--blue-darkest);
+ }
+
+ /* =========================
+   LAYOUT
+   ========================= */
+ .container {
+     max-width: 1100px;
+     margin: auto;
+     padding: 0 20px;
+     text-align: center;
+ }
+
+ /* =========================
+   HEADER
+   ========================= */
+ header {
+     background-color: var(--blue-dark);
+     padding: 14px 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     z-index: 50;
+     border-bottom: 1px solid var(--blue-light);
+ }
+
+ /* =========================
+   NAVIGATION & LOGO
+   ========================= */
+ .logo {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .logo img {
+     height: 52px;
+ }
+
+ nav a {
+     color: var(--blue-pale);
+     text-decoration: none;
+     margin-left: 24px;
+     font-size: 14px;
+     transition: 0.2s;
+ }
+
+ nav a:hover,
+ nav a.active {
+     color: var(--white);
+     text-decoration: underline;
+     border-bottom: 2px solid var(--white);
+ }
+
+ /* =========================
+   HERO SECTION
+   ========================= */
+ .hero {
+     padding: 90px 20px;
+     background: linear-gradient(to right, var(--blue-darkest), var(--blue-mid));
+     color: var(--white);
+     text-align: center;
+ }
+
+ .hero h1 {
+     font-size: 40px;
+     margin-bottom: 14px;
+ }
+
+ .hero p {
+     font-size: 17px;
+     color: var(--blue-pale);
+     margin-bottom: 28px;
+ }
+
+ .hero-flex {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .stats {
+     background: var(--blue-dark);
+     color: white;
+ }
+
+ .stats-grid {
+     display: flex;
+     justify-content: space-around;
+ }
+
+
+ /* footer */
+
+ /*  FOOTER */
+ footer {
+     background-color: var(--blue-darkest);
+     color: var(--blue-pale);
+     text-align: center;
+     padding: 20px;
+     font-size: 13px;
+     margin-top: 20px;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Roboto, 'Poppins', system-ui, -apple-system, 'Inter', sans-serif;
+ }
+
+ body {
+     background: #f8fafc;
+     color: #0f172a;
+     scroll-behavior: smooth;
+ }
+
+ /* container utility */
+ .container {
+     max-width: 1280px;
+     margin: 0 auto;
+     padding: 0 24px;
+ }
+
+
+ .search-mini {
+     background: #f1f5f9;
+     padding: 6px 12px;
+     border-radius: 40px;
+     display: flex;
+     align-items: center;
+     gap: 6px;
+ }
+
+ .search-mini input {
+     border: none;
+     background: transparent;
+     outline: none;
+     font-size: 0.85rem;
+     width: 140px;
+ }
+
+ .btn-outline-sm {
+     background: none;
+     border: 1px solid #cbd5e1;
+     padding: 5px 12px;
+     border-radius: 30px;
+     font-size: 0.75rem;
+     cursor: pointer;
+     transition: 0.2s;
+ }
+
+ /* page hero */
+ .page-hero {
+     background: linear-gradient(100deg, #eef2ff 0%, #e0f2fe 100%);
+     padding: 2.5rem 0;
+     border-bottom: 1px solid #cbd5e180;
+ }
+
+ .hero-inner h2 {
+     font-size: 2.2rem;
+     font-weight: 700;
+     color: #0c4e6e;
+ }
+
+ .hero-inner p {
+     margin-top: 12px;
+     font-size: 1.1rem;
+     color: #2c3e50;
+     max-width: 700px;
+ }
+
+ /* filter bar */
+ .filter-section {
+     margin: 2rem 0 1.5rem;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     gap: 15px;
+     background: white;
+     padding: 0.8rem 1.2rem;
+     border-radius: 60px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.05);
+ }
+
+ .filter-tabs {
+     display: flex;
+     gap: 12px;
+     flex-wrap: wrap;
+ }
+
+ .filter-chip {
+     background: #f1f5f9;
+     padding: 6px 18px;
+     border-radius: 40px;
+     font-size: 0.85rem;
+     font-weight: 500;
+     cursor: pointer;
+     transition: all 0.2s;
+     border: 1px solid transparent;
+ }
+
+ .filter-chip.active,
+ .filter-chip:hover {
+     background: #1e6f5c;
+     color: white;
+     border-color: #1e6f5c;
+ }
+
+ .search-bar {
+     display: flex;
+     gap: 8px;
+     background: #f8fafc;
+     padding: 4px 12px;
+     border-radius: 50px;
+     border: 1px solid #e2e8f0;
+ }
+
+ .search-bar input {
+     border: none;
+     background: transparent;
+     padding: 8px 4px;
+     width: 200px;
+     outline: none;
+ }
+
+ .search-bar button {
+     background: #1e6f5c;
+     border: none;
+     color: white;
+     padding: 0 18px;
+     border-radius: 40px;
+     font-weight: 500;
+     cursor: pointer;
+     transition: 0.2s;
+ }
+
+ /* internship grid */
+ .internship-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+     gap: 2rem;
+     margin: 2rem 0 3rem;
+ }
+
+ /* card style */
+ .intern-card {
+     background: white;
+     border-radius: 28px;
+     overflow: hidden;
+     box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.1);
+     transition: all 0.25s ease;
+     display: flex;
+     flex-direction: column;
+     border: 1px solid #eef2ff;
+ }
+
+ .intern-card:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 24px 36px -16px rgba(0, 0, 0, 0.15);
+ }
+
+ .card-img {
+     height: 180px;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+ }
+
+ /* cambodian themed image overlays */
+ .card-badge {
+     position: absolute;
+     top: 14px;
+     left: 14px;
+     background: rgba(0, 0, 0, 0.65);
+     backdrop-filter: blur(4px);
+     color: white;
+     font-size: 0.7rem;
+     padding: 4px 12px;
+     border-radius: 30px;
+     font-weight: 500;
+ }
+
+ .card-content {
+     padding: 1.3rem 1.2rem 1.5rem;
+     flex: 1;
+ }
+
+ .card-title {
+     font-size: 1.35rem;
+     font-weight: 700;
+     margin-bottom: 6px;
+     color: #0f172a;
+ }
+
+ .company {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     color: #475569;
+     font-size: 0.85rem;
+     margin: 8px 0;
+     font-weight: 500;
+ }
+
+ .details {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 12px;
+     margin: 14px 0;
+     font-size: 0.8rem;
+     color: #2d4a6e;
+ }
+
+ .details span {
+     background: #eef2ff;
+     padding: 4px 12px;
+     border-radius: 20px;
+ }
+
+ .desc {
+     font-size: 0.85rem;
+     color: #334155;
+     margin: 12px 0 16px;
+     line-height: 1.4;
+ }
+
+ .card-footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 12px;
+ }
+
+ .btn-apply {
+     background: #1e6f5c;
+     color: white;
+     border: none;
+     padding: 8px 20px;
+     border-radius: 40px;
+     font-weight: 600;
+     font-size: 0.8rem;
+     cursor: pointer;
+     transition: 0.2s;
+ }
+
+ .btn-apply:hover {
+     background: #0f5a49;
+     transform: scale(0.97);
+ }
+
+ .location {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     font-size: 0.75rem;
+     color: #5b6e8c;
+ }
+
+ /* no results */
+ .no-results {
+     text-align: center;
+     padding: 3rem;
+     background: #f1f5f9;
+     border-radius: 48px;
+     margin: 2rem 0;
+     color: #475569;
+ }
+
+
+
+ @media (max-width: 680px) {
+     .nav-flex {
+         flex-direction: column;
+         gap: 12px;
+     }
+
+     .filter-section {
+         border-radius: 28px;
+         flex-direction: column;
+         align-items: stretch;
+     }
+
+     .search-bar {
+         justify-content: space-between;
+     }
+
+     .hero-inner h2 {
+         font-size: 1.8rem;
+     }
+ }

@@ -1,0 +1,596 @@
+/* CSS VARIABLES (Color Palette) */
+/* ============================================================
+   style.css — Khmer InternSphere
+   Theme  : White & Midnight Blue
+   ============================================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   VARIABLES
+   ========================= */
+:root {
+    --blue-darkest: #080838;
+    --blue-dark: #111154;
+    --blue-mid: #191970;
+    --blue-light: #292c7b;
+    --blue-accent: #393f86;
+    --blue-pale: #cadcfc;
+    --blue-xpale: #eef2ff;
+    --white: #ffffff;
+    --gray-light: #f4f6fb;
+    --gray-border: #c5cde8;
+    --gray-text: #4a5068;
+    --red-req: #c0392b;
+}
+
+.logo-track {
+    display: flex;
+    gap: 20px;
+    will-change: transform;
+}
+
+/* =========================
+   BASE
+   ========================= */
+body {
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: var(--gray-light);
+    color: var(--blue-darkest);
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+    background-color: var(--blue-dark);
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--blue-light);
+}
+
+/* =========================
+   NAVIGATION & LOGO
+   ========================= */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 52px;
+}
+
+nav a {
+    color: var(--blue-pale);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--white);
+    text-decoration: underline;
+    border-bottom: 2px solid var(--white);
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+.hero {
+    padding: 90px 20px;
+    background: linear-gradient(to right, var(--blue-darkest), var(--blue-mid));
+    color: var(--white);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 14px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: var(--blue-pale);
+    margin-bottom: 28px;
+}
+
+.hero-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    background: var(--blue-dark);
+    color: white;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+:root {
+    /* Blues — dark to light */
+    --blue-darkest: #080838;
+    /* footer, overlays */
+    --blue-dark: #111154;
+    /* header, buttons */
+    --blue-mid: #191970;
+    /* hero, submit button */
+    --blue-light: #292c7b;
+    /* accents, legends */
+    --blue-accent: #393f86;
+    /* hover states */
+    --blue-pale: #cadcfc;
+    /* text on dark backgrounds */
+    --blue-xpale: #eef2ff;
+    /* input backgrounds */
+
+    /* Neutrals */
+    --white: #ffffff;
+    --gray-light: #f4f6fb;
+    /* page background */
+    --gray-border: #c5cde8;
+    /* borders */
+    --gray-text: #4a5068;
+    /* body text */
+
+    /* Validation */
+    --red-req: #c0392b;
+    /* required field asterisk */
+}
+
+
+
+/* PAGE HERO (Banner below header) */
+.page-hero {
+    background-color: var(--blue-mid);
+    color: var(--white);
+    text-align: center;
+    padding: 52px 20px 44px;
+}
+
+.page-hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.page-hero p {
+    font-size: 15px;
+    color: var(--blue-pale);
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* MAIN LAYOUT (Two-column grid) */
+main {
+    max-width: 980px;
+    margin: 48px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+/*  CARDS (Form card & Info cards) */
+.form-card,
+.info-card {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--gray-border);
+}
+
+.form-card {
+    padding: 32px;
+}
+
+.info-card {
+    padding: 24px;
+}
+
+.form-card h2 {
+    font-size: 18px;
+    color: var(--blue-dark);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--blue-xpale);
+}
+
+.info-card h3 {
+    font-size: 15px;
+    color: var(--blue-dark);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--blue-xpale);
+}
+
+/*  FORM — FIELDSETS & LABELS */
+fieldset {
+    border: 1px solid var(--gray-border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--blue-light);
+    padding: 0 8px;
+    background: var(--white);
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--blue-dark);
+    margin-bottom: 5px;
+}
+
+.req {
+    color: var(--red-req);
+}
+
+/*  FORM — INPUT FIELDS & TEXTAREA */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--gray-border);
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background-color: var(--blue-xpale);
+    color: var(--blue-darkest);
+    transition:
+        border-color 0.2s,
+        background-color 0.2s;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+    color: #8892c0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: var(--blue-light);
+    background-color: var(--white);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(25, 25, 112, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* FORM — SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--blue-mid);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6px;
+    transition:
+        background-color 0.2s,
+        transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: var(--blue-dark);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* INFO SIDEBAR */
+.info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Contact items (icon + text) */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.contact-icon {
+    width: 38px;
+    height: 38px;
+    background-color: var(--blue-xpale);
+    border-radius: 50%;
+    border: 1px solid var(--gray-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.contact-item strong {
+    display: block;
+    font-size: 13px;
+    color: var(--blue-dark);
+    margin-bottom: 2px;
+}
+
+.contact-item p {
+    font-size: 13px;
+    color: var(--gray-text);
+    line-height: 1.4;
+}
+
+/* Google Map embed */
+.map-embed {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 4px;
+    border: 1px solid var(--gray-border);
+}
+
+.map-embed iframe {
+    width: 100%;
+    height: 160px;
+    border: 0;
+    display: block;
+}
+
+/* Office hours table */
+.hours-table {
+    width: 100%;
+    font-size: 13px;
+    border-collapse: collapse;
+}
+
+.hours-table td {
+    padding: 6px 0;
+    color: var(--gray-text);
+    border-bottom: 1px solid var(--blue-xpale);
+}
+
+.hours-table tr:last-child td {
+    border-bottom: none;
+}
+
+.hours-table td:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: var(--blue-mid);
+}
+
+/* About note text */
+.info-card p {
+    font-size: 13px;
+    color: var(--gray-text);
+    line-height: 1.6;
+}
+
+/*  FOOTER */
+footer {
+    background-color: var(--blue-darkest);
+    color: var(--blue-pale);
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* THANK YOU OVERLAY (Full-screen success message) */
+.thankyou-overlay {
+    display: none;
+    /* hidden by default */
+    position: fixed;
+    inset: 0;
+    background-color: var(--blue-mid);
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.thankyou-overlay.visible {
+    display: flex;
+    /* shown when .visible class is added */
+}
+
+.thankyou-overlay .checkmark {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.thankyou-overlay .checkmark svg {
+    width: 44px;
+    height: 44px;
+}
+
+.thankyou-overlay h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.thankyou-overlay p {
+    font-size: 17px;
+    color: var(--blue-pale);
+    max-width: 480px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.thankyou-overlay .back-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    background-color: var(--white);
+    color: var(--blue-dark);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s,
+        transform 0.1s;
+}
+
+.thankyou-overlay .back-btn:hover {
+    background-color: var(--blue-pale);
+}
+
+.thankyou-overlay .back-btn:active {
+    transform: scale(0.97);
+}
+/* ===================== THANK YOU OVERLAY ===================== */
+.thankyou-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 8, 56, 0.65);
+    backdrop-filter: blur(6px);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.thankyou-overlay.visible {
+    display: flex;
+    animation: fadeInTY 0.3s ease;
+}
+
+@keyframes fadeInTY {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.thankyou-card {
+    background: white;
+    border-radius: 24px;
+    padding: 48px 40px 40px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 32px 80px rgba(8, 8, 56, 0.28);
+    animation: popUpTY 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes popUpTY {
+    from { transform: scale(0.85) translateY(20px); opacity: 0; }
+    to   { transform: scale(1)    translateY(0);    opacity: 1; }
+}
+
+.thankyou-icon {
+    font-size: 3.5rem;
+    margin-bottom: 16px;
+    animation: bounceTY 0.6s 0.2s ease both;
+}
+
+@keyframes bounceTY {
+    0%   { transform: scale(0);   }
+    60%  { transform: scale(1.2); }
+    100% { transform: scale(1);   }
+}
+
+.thankyou-card h2 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #111154;
+    margin-bottom: 12px;
+}
+
+.thankyou-card p {
+    font-size: 0.95rem;
+    color: #4a5068;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.thankyou-sub {
+    font-size: 0.82rem !important;
+    color: #8a93b0 !important;
+    font-style: italic;
+    margin-bottom: 28px !important;
+}
+
+.thankyou-back-btn {
+    background: linear-gradient(135deg, #111154, #292c7b);
+    color: white;
+    border: none;
+    padding: 12px 36px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thankyou-back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(17, 17, 84, 0.3);
+}

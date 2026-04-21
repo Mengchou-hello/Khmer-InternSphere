@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khmer InternSphere</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/internship.css">
+    <link rel="stylesheet" href="./css/nav.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Khmer InternSphere Logo">
+        </div>
+        <button class="burger" id="burgerBtn" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="mainNav">
+            <a href="home.html">Home</a>
+            <a href="internships.html">Internships</a>
+            <a href="companies.html">Companies</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <!-- put ur code here  -->
+
+
+    <!-- Hero section -->
+    <section class="page-hero">
+        <div class="container hero-inner">
+            <h2> Find your perfect internship in Cambodia</h2>
+            <p>Connect with top companies and build real-world skills. Start your journey
+                with Khmer InternSphere.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Filter & search bar -->
+        <div class="filter-section">
+            <div class="filter-tabs" id="filterTabs">
+                <div class="filter-chip active" data-filter="all">All internships</div>
+                <div class="filter-chip" data-filter="IT & Tech"> IT & Tech</div>
+                <div class="filter-chip" data-filter="Marketing"> Marketing</div>
+                <div class="filter-chip" data-filter="Finance"> Finance</div>
+                <div class="filter-chip" data-filter="Hospitality"> Hospitality</div>
+
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by title, company or location...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+
+        <!-- Internship cards grid -->
+        <div id="internshipGrid" class="internship-grid">
+            <!-- dynamic cards will be injected here by JS -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-logo">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <p class="footer-contact">
+            Group Alpha | INFO 250 Web Development I
+            Email: info@khmerintersphere.com | Phone: +855 168 168
+        </p>
+        <p class="footer-copy">&copy; 2026 Khmer InternSphere. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>
